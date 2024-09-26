@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: rgb(238, 242, 248); 
+}
+
+.container {
+  width: 350px; 
+  height: 100vh;
+  
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #3f51b5;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  cursor: pointer;
+  margin-left: 15px;
+  font-size: 24px; /* Tamaño de icono */
+}
+
+.menu-items {
+  display: none; 
+  flex-direction: column; 
+  position: absolute; 
+  top: 60px; 
+  left: 0;
+  background-color: #3f51b5; 
+  width: 350px; 
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block; 
+}
+
+.intro, .exercise {
+  height: 100vh; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #000
+}
+
+/* Cambios en la sección de introducción */
+.intro {
+  background-color: #f1f1f1;
+  flex-direction: column; 
+  align-items: center; 
+  border: 1px solid #000
+}
+
+.intro img {
+  max-width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.intro-text {
+  max-width: 500px;
+  text-align: center; 
+}
+
+.exercise {
+  background-color: #e3f2fd;
+  flex-direction: column;
+  text-align: center;
+}
+
+#number-display {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #3f51b5;
+}
+
+.exercise input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.btn{
+  padding: 8px 24px;
+  font-size: 18px; 
+  background-color: #007bff; 
+  border: 2px solid #0056b3; 
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s; 
+}
+
+.exercise button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); 
+}
+
+#feedback {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+

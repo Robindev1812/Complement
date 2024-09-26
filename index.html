@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complement - App para Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"> <!-- Contenedor para centrar -->
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">Complement</div>
+            <div class="menu">
+                <div class="hamburger" onclick="toggleMenu()">☰</div>
+                <div class="menu-items" id="menu-items">
+                    <a href="#">Mi Cuenta</a>
+                    <a href="#">Configuración</a>
+                    <a href="#">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sección de Descripción -->
+        <section class="intro">
+            <img src="./img.jpg" alt="Descripción de la app" />
+            <div class="intro-text">
+                <h1>Bienvenido a Complement</h1>
+                <p>Mejora tus habilidades lógicas matemáticas a través de ejercicios mentales.</p>
+                <button class="btn" onclick="iniciarPrueba()">Iniciar Prueba</button>
+            </div>
+        </section>
+
+        <!-- Sección de Ejercicio -->
+        <section class="exercise" id="exercise">
+            <h2>¿Cuánto falta para llegar a 10?</h2>
+            <div id="number-display">6</div>
+            <input type="number" id="user-input" placeholder="Escribe tu respuesta" />
+            <button class="btn" onclick="checkAnswer()">Enviar</button>
+            <div id="feedback"></div>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
