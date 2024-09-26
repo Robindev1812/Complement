@@ -31,7 +31,11 @@ function checkAnswer() {
 
   if (userAnswer === correctAnswer) {
       document.getElementById('feedback').innerText = "¡Correcto!";
+      document.getElementById('user-input').value = ''; // Limpiar campo de entrada
+
+      setTimeout(iniciarPrueba,1000)
   } else {
       document.getElementById('feedback').innerText = "Incorrecto. Intenta de nuevo.";
+      document.getElementById('user-input').value = ''; // Limpiar campo de entrada
   }
 }
